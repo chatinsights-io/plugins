@@ -9,8 +9,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    wp_chatinsights_widget
- * @subpackage wp_chatinsights_widget/includes
+ * @package    chatinsights_widget
+ * @subpackage chatinsights_widget/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    wp_chatinsights_widget
- * @subpackage wp_chatinsights_widget/includes
+ * @package    chatinsights_widget
+ * @subpackage chatinsights_widget/includes
  * @author     Your Name <email@example.com>
  */
-class wp_chatinsights_widget
+class chatinsights_widget
 {
 
 	/**
@@ -36,7 +36,7 @@ class wp_chatinsights_widget
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      wp_chatinsights_widget_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      chatinsights_widget_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -45,9 +45,9 @@ class wp_chatinsights_widget
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      string    $wp_chatinsights_widget    The string used to uniquely identify this plugin.
+	 * @var      string    $chatinsights_widget    The string used to uniquely identify this plugin.
 	 */
-	protected $wp_chatinsights_widget;
+	protected $chatinsights_widget;
 
 	/**
 	 * The current version of the plugin.
@@ -69,12 +69,12 @@ class wp_chatinsights_widget
 	 */
 	public function __construct()
 	{
-		if (defined('WP_CHATINSIGHTS_WIDGET_VERSION')) {
-			$this->version = WP_CHATINSIGHTS_WIDGET_VERSION;
+		if (defined('CHATINSIGHTS_WIDGET_VERSION')) {
+			$this->version = CHATINSIGHTS_WIDGET_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->wp_chatinsights_widget = 'wp-chatinsights-widget';
+		$this->chatinsights_widget = 'chatinsights-widget';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -88,10 +88,10 @@ class wp_chatinsights_widget
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - wp_chatinsights_widget_Loader. Orchestrates the hooks of the plugin.
-	 * - wp_chatinsights_widget_i18n. Defines internationalization functionality.
-	 * - wp_chatinsights_widget_Admin. Defines all hooks for the admin area.
-	 * - wp_chatinsights_widget_Public. Defines all hooks for the public side of the site.
+	 * - chatinsights_widget_Loader. Orchestrates the hooks of the plugin.
+	 * - chatinsights_widget_i18n. Defines internationalization functionality.
+	 * - chatinsights_widget_Admin. Defines all hooks for the admin area.
+	 * - chatinsights_widget_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -106,33 +106,33 @@ class wp_chatinsights_widget
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-wp-chatinsights-widget-loader.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-chatinsights-widget-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-wp-chatinsights-widget-i18n.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-chatinsights-widget-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path(dirname(__FILE__)) . 'admin/class-wp-chatinsights-widget-admin.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'admin/class-chatinsights-widget-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path(dirname(__FILE__)) . 'public/class-wp-chatinsights-widget-public.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'public/class-chatinsights-widget-public.php';
 
-		$this->loader = new wp_chatinsights_widget_Loader();
+		$this->loader = new chatinsights_widget_Loader();
 
 	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the wp_chatinsights_widget_i18n class in order to set the domain and to register the hook
+	 * Uses the chatinsights_widget_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -141,7 +141,7 @@ class wp_chatinsights_widget
 	private function set_locale()
 	{
 
-		$plugin_i18n = new wp_chatinsights_widget_i18n();
+		$plugin_i18n = new chatinsights_widget_i18n();
 
 		$this->loader->add_action('plugins_loaded', $plugin_i18n, 'load_plugin_textdomain');
 
@@ -157,7 +157,7 @@ class wp_chatinsights_widget
 	private function define_admin_hooks()
 	{
 
-		$plugin_admin = new wp_chatinsights_widget_Admin($this->get_wp_chatinsights_widget(), $this->get_version());
+		$plugin_admin = new chatinsights_widget_Admin($this->get_chatinsights_widget(), $this->get_version());
 
 		$this->loader->add_action('admin_init', $plugin_admin, 'register_widget_id_setting');
 		$this->loader->add_action('admin_menu', $plugin_admin, 'create_admin_menu_page');
@@ -176,7 +176,7 @@ class wp_chatinsights_widget
 	private function define_public_hooks()
 	{
 
-		$plugin_public = new wp_chatinsights_widget_Public($this->get_wp_chatinsights_widget(), $this->get_version());
+		$plugin_public = new chatinsights_widget_Public($this->get_chatinsights_widget(), $this->get_version());
 
 		$this->loader->add_action('wp_footer', $plugin_public, 'embed_js_widget');
 		$this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_styles');
@@ -201,16 +201,16 @@ class wp_chatinsights_widget
 	 * @since     1.0.0
 	 * @return    string    The name of the plugin.
 	 */
-	public function get_wp_chatinsights_widget()
+	public function get_chatinsights_widget()
 	{
-		return $this->wp_chatinsights_widget;
+		return $this->chatinsights_widget;
 	}
 
 	/**
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    wp_chatinsights_widget_Loader    Orchestrates the hooks of the plugin.
+	 * @return    chatinsights_widget_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader()
 	{

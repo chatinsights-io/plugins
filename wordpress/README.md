@@ -8,13 +8,29 @@ The ChatInsights.io widget allows visitors to your WordPress site to see and int
 
 ## Installation
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload `wp-chatinsights-widget.php` to the `/wp-content/plugins/` directory
+1. Download the `chatinsights-widget.zip` file
+1. Extract the contents of the zip file to your `wp-content\plugins` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('wp_chatinsights_widget_hook'); ?>` in your templates
+
+## Configuration
+
+1. Within your WordPress Admin Portal navigate to Settings > ChatInsights Widget
+1. Copy your unique Bot Widget ID from the [ChatInsights.io](https://portal.chatinsights.io) portal
+1. Paste the Widget ID into the textbox on the ChatInsights Widget settings page and click 'Save Changes'
+1. Your widget should now be visible on your site. If it's not please see the troubleshooting section below
+
+## Troubleshooting
+
+By default, we block access to your bot from any domains other than the one you registered with. This is to ensure that the bot only appears in locations you've authorized. If you are having trouble getting your bot to show up please follow these steps:
+
+1. Login to the [ChatInsights.io Portal](https://portal.chatinsights.io)
+1. Navigate to the "Chat Widget" section (the "chat bubble" icon).
+1. Review the "Widget Log". Look for entries that have a red 'x' in the "Allowed" column
+1. If you wish to allow access from the denied domain, simply click the red 'x' to allow
+1. Refresh your site to see if the widget appears
+
+If these steps do not work, please contact us at <a href="mailto:support@chatinsights.io">support@chatinsights.io</a> and we'll be happy to help!
+
 
 ## Frequently Asked Questions
 

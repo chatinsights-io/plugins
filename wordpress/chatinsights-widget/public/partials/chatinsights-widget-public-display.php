@@ -8,8 +8,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    wp_chatinsights_widget
- * @subpackage wp_chatinsights_widget/public/partials
+ * @package    chatinsights_widget
+ * @subpackage chatinsights_widget/public/partials
  */
 ?>
 

@@ -22,7 +22,7 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    wp_chatinsights_widget
+ * @package    chatinsights_widget
  */
 
 // If uninstall not called from WordPress, then exit.

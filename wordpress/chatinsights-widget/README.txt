@@ -14,7 +14,7 @@ The ChatInsights.io widget allows visitors to your WordPress site to see and int
 
 == Installation ==
 
-1. Download the `wp-chatinsights-widget.zip` file
+1. Download the `chatinsights-widget.zip` file
 1. Extract the contents of the zip file to your `wp-content\plugins` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 

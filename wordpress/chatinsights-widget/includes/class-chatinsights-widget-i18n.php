@@ -9,8 +9,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    wp_chatinsights_widget
- * @subpackage wp_chatinsights_widget/includes
+ * @package    chatinsights_widget
+ * @subpackage chatinsights_widget/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    wp_chatinsights_widget
- * @subpackage wp_chatinsights_widget/includes
+ * @package    chatinsights_widget
+ * @subpackage chatinsights_widget/includes
  * @author     Your Name <email@example.com>
  */
-class wp_chatinsights_widget_i18n
+class chatinsights_widget_i18n
 {
 
 
@@ -37,7 +37,7 @@ class wp_chatinsights_widget_i18n
 	{
 
 		load_plugin_textdomain(
-			'wp-chatinsights-widget',
+			'chatinsights-widget',
 			false,
 			dirname(dirname(plugin_basename(__FILE__))) . '/languages/'
 		);

@@ -6,8 +6,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    wp_chatinsights_widget
- * @subpackage wp_chatinsights_widget/includes
+ * @package    chatinsights_widget
+ * @subpackage chatinsights_widget/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    wp_chatinsights_widget
- * @subpackage wp_chatinsights_widget/includes
+ * @package    chatinsights_widget
+ * @subpackage chatinsights_widget/includes
  * @author     Your Name <email@example.com>
  */
-class wp_chatinsights_widget_Deactivator
+class chatinsights_widget_Deactivator
 {
 
 	/**
