@@ -13,7 +13,7 @@
  * @package           ChatInsights_Widget
  *
  * @wordpress-plugin
- * Plugin Name:       WP ChatInsights Widget
+ * Plugin Name:       ChatInsights Widget
  * Plugin URI:        https://github.com/BackslashDev-LLC/chatinsights-plugins
  * Description:       Embed your ChatInsights.io chat widget on your WordPress site.
  * Version:           1.0.0

@@ -1,4 +1,4 @@
-# WP ChatInsights Widget - WordPress Plugin
+# ChatInsights Widget - WordPress Plugin
 
 Embed the ChatInsights.io widget into your WordPress site for a seamless integration.
 

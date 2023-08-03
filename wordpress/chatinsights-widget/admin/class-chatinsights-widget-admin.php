@@ -119,23 +119,23 @@ class chatinsights_widget_Admin
 
 	public function create_admin_menu_page()
 	{
-		add_options_page('WP ChatInsights Widget', 'ChatInsights Widget', 'manage_options', 'chatinsights-widget', array($this, 'display_settings_page'));
+		add_options_page('ChatInsights Widget', 'ChatInsights Widget', 'manage_options', 'chatinsights-widget', array($this, 'display_settings_page'));
 	}
 	public function display_settings_page()
 	{
 		?>
-														<div>
-														<h2>WP ChatInsights Widget</h2>
-														Visit the <a href="https://portal.chatinsights.io" target="_blank">ChatInsights Portal</a> to get your widget ID and paste it below.
-														<form method="post" action="options.php">
-														<?php
-														settings_fields('chatinsights_widget_options');
-														do_settings_sections('chatinsights-widget');
-														submit_button();
-														?>
-														</form>
-														</div>
-														<?php
+																<div>
+																<h2>ChatInsights Widget</h2>
+																Visit the <a href="https://portal.chatinsights.io" target="_blank">ChatInsights Portal</a> to get your widget ID and paste it below.
+																<form method="post" action="options.php">
+																<?php
+																settings_fields('chatinsights_widget_options');
+																do_settings_sections('chatinsights-widget');
+																submit_button();
+																?>
+																</form>
+																</div>
+																<?php
 	}
 
 }

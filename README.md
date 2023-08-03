@@ -6,7 +6,7 @@ This repository contains the source code for all officially supported plugins bu
 
 ### Wordpress
 
-The WP ChatInsights Widget plugin is a simple way to embed your ChatInsights.io chat widget in your existing WordPress site. For more information please visit the [WordPress README](./wordpress/README.md).
+The ChatInsights Widget plugin is a simple way to embed your ChatInsights.io chat widget in your existing WordPress site. For more information please visit the [WordPress README](./wordpress/README.md).
 
 ## Contribution Guidelines
 
