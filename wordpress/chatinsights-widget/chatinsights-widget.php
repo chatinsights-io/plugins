@@ -14,7 +14,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       ChatInsights Widget
- * Plugin URI:        https://github.com/BackslashDev-LLC/chatinsights-plugins
+ * Plugin URI:        https://github.com/chatinsights-io/plugins
  * Description:       Embed your ChatInsights.io chat widget on your WordPress site.
  * Version:           1.0.0
  * Author:            ChatInsights.io

@@ -14,7 +14,7 @@ We truly appreciate your interest in contributing to the ChatInsights.io platfor
 
 ### Bug Reports
 
-If you find a bug in the plugin, we encourage you to report it. Please [create a new issue](https://github.com/your-repository-link/issues) in this repository and include the following information:
+If you find a bug in the plugin, we encourage you to report it. Please [create a new issue](https://github.com/chatinsights-io/plugins/issues) in this repository and include the following information:
 
 - A clear and concise description of the bug.
 - The steps required to reproduce the bug.
@@ -24,7 +24,7 @@ If you find a bug in the plugin, we encourage you to report it. Please [create a
 
 ### Suggesting Enhancements
 
-We always welcome suggestions for enhancements! To propose a new feature or enhancement, please [create a new issue](https://github.com/backslashdev-llc/chatinsights-plugins/issues) and include the following:
+We always welcome suggestions for enhancements! To propose a new feature or enhancement, please [create a new issue](https://github.com/chatinsights-io/plugins/issues) and include the following:
 
 - A clear and concise description of the enhancement.
 - Explain the reason for the enhancement and how it would improve the plugin.
@@ -32,7 +32,7 @@ We always welcome suggestions for enhancements! To propose a new feature or enha
 
 ### Requesting Additional Pluins
 
-If there is a particular platform you're interested in us creating a plugin for, we'd love to hear about it. To propose an additional integration please [create a new issue](https://github.com/backslashdev-llc/chatinsights-plugins/issues) and include the following:
+If there is a particular platform you're interested in us creating a plugin for, we'd love to hear about it. To propose an additional integration please [create a new issue](https://github.com/chatinsights-io/plugins/issues) and include the following:
 
 - A link to the platfrom you wish to have a plugin built for
 - A link to the documentation outlining how plugins work for the desired platform
